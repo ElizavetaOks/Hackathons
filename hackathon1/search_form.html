@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Form</title>
+</head>
+<body>
+    <h1>City Search Form</h1>
+    <!-- Your form content goes here -->
+    <form method="post" action="{{ url_for('search_city_info') }}">
+        <label for="city_name">Enter City Name:</label>
+        <input type="text" id="city_name" name="city_name" required>
+        <button type="submit">Search</button>
+    </form>
+{% if city_info %} 
+<h2>City Information</h2> 
+<p>City: {{ city_info.city }}</p> 
+<p>Maximum Population: {{ city_info.maximum_number_of_the_jewish_population }}</p> 
+<p>Period of Maximum Population: {{ city_info.period_of_maximum_jewish_population }}</p> 
+<p>Current Population: {{ city_info.current_Jewish_population }}</p> 
+<p>Years of Life: {{ city_info.years_of_life | safe }}</p> 
+{% endif %} 
+</body>
+</html>
