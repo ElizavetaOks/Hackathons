@@ -1,0 +1,13 @@
+Elizaveta and Anna: System to find events for jwish communities
+The project is simple, with just one file and one template, but is functional
+and yet you could implement many concepts that we learned: OOP (including decorators)
+a very popular and useful module in python: Flask, and finally: Databases.
+The page is not user friendly yet but you already have the logic and functionality that are the most important.
+I would advice you to keep working in this project in the future, to share it in your portfolio after some review and design to display the information.
+Also you can consider to use a API to add the data, not manually as you did.
+
+Python OOP:9/10
+Modules: 7/10
+Database:9/10
+JSON/API:5/10
+Overall: 7.5
